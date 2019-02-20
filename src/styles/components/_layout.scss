@@ -1,0 +1,58 @@
+.main {
+    padding: 3rem 0;
+}
+
+.page {
+    &--header {
+        padding-bottom: 3rem;
+
+        &-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        &-meta {
+            font-size: .875rem;
+        }
+    }
+
+    &--return {
+        stroke: 2;
+        fill: $ibm-colors__blue-70;
+        transition: color 0.2s ease;
+        text-decoration: none;
+
+        &:hover,
+        &:active,
+        &:focus {
+            fill: $ibm-colors__purple-90;
+            transition: fill 0.2s ease;
+        }
+    }
+
+    &--section-header {
+        padding-bottom: 1.25rem;
+    }
+
+    &--content {
+        padding-bottom: 2rem; 
+        
+        p {
+            padding-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 2rem;
+        }
+
+        li {
+            text-indent: -1rem;
+        }
+
+        ul >li:before {
+            margin-right: .5rem;
+            content: "–";
+        }
+    }
+}
